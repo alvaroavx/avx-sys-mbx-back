@@ -1,0 +1,37 @@
+const usuarios = require('./usuarios/usuarios.service.js');
+const calendarios = require('./calendarios/calendarios.service.js');
+const equipos = require('./equipos/equipos.service.js');
+const alertas = require('./alertas/alertas.service.js');
+const tareas = require('./tareas/tareas.service.js');
+const actividades = require('./actividades/actividades.service.js');
+const mbx = require('./mbx/mbx.service.js');
+const pagos = require('./pagos/pagos.service.js');
+const uploads = require('./uploads/uploads.service.js');
+const facturacion = require('./facturacion/facturacion.service.js');
+const agendamiento = require('./agendamiento/agendamiento.service.js');
+const evaluaciones = require('./evaluaciones/evaluaciones.service.js');
+const payments = require('./payments/payments.service.js');
+const getCalendar = require('./get-calendar/get-calendar.service.js');
+const options = require('./options/options.service.js');
+const events = require('./events/events.service.js');
+const typeform = require('./typeform/typeform.service.js');
+// eslint-disable-next-line no-unused-vars
+module.exports = function (app) {
+  app.configure(usuarios);
+  app.configure(calendarios);
+  app.configure(equipos);
+  app.configure(alertas);
+  app.configure(tareas);
+  app.configure(actividades);
+  app.configure(mbx);
+  app.configure(pagos);
+  app.configure(uploads);
+  app.configure(facturacion);
+  app.configure(agendamiento);
+  app.configure(evaluaciones);
+  app.configure(payments);
+  app.configure(getCalendar);
+  app.configure(options);
+  app.configure(events);
+  app.configure(typeform);
+};
